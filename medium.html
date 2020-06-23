@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link rel="stylesheet" href="medium.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+        rel="stylesheet">
+</head>
+
+<body>
+  
+  <a href="index.html"><h2 class="home"> &nbsp; &nbsp; HOME &nbsp; &nbsp;  </h2></a>
+  <h1><button id="level-title" class="startGame">START GAME</button></h1>
+  
+    <div lass="row">
+
+      <div type="button" id="green" class="btn green">
+
+      </div>
+
+      <div type="button" id="red" class="btn orange">
+
+      </div>
+
+      <div type="button" id="orange" class="btn red">
+      
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div type="button" id="yellow" class="btn yellow">
+
+      </div>
+      <div type="button" id="blue" class="btn pink">
+
+      </div>
+      <div type="button" id="pink" class="btn blue">
+
+      </div>
+    </div>
+
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+  var buttonColours = ["red", "blue", "green", "yellow", "pink", "orange"];
+  var gamePattern =[];
+  var userClickedPattern = [];
+  var started = false;
+  var level =0;
+  
+  $(".startGame").click(function(){
+    if (!started) {
+    $("#level-title").text("Level " + level);
+    nextSequence();
+    started = true;
+  }
+});
+
+  $(".btn").click(function() {
+   var userChosenColour = $(this).attr("id");
+   userClickedPattern.push(userChosenColour);
+   playSound(userChosenColour);
+   animatePress(userChosenColour);
+   checkAnswer(userClickedPattern.length-1);
+  })
+  
+  function checkAnswer(currentLevel){
+    if(gamePattern[currentLevel] === userClickedPattern[currentLevel]){
+      console.log("Success");
+        if (userClickedPattern.length === gamePattern.length){
+
+      setTimeout(function() {
+        nextSequence();
+      },1000);}}
+
+  else {
+    console.log("wrong");
+
+    playSound("wrong");
+
+    $("body").addClass("game-over");
+      setTimeout(function () {
+        $("body").removeClass("game-over");
+      }, 200);
+    $("#level-title").text("Over Game");
+    setTimeout(function() {
+      $("#level-title").text("START GAME");
+      },2000);  
+    startOver();
+
+      }
+   }
+
+  function nextSequence(){
+    userClickedPattern=[];
+    level++;
+    $("#level-title").text("Level " + level);
+    var randomNumber = Math.floor(Math.random() * 6);
+    var randomChosenColour = buttonColours[randomNumber];
+    gamePattern.push(randomChosenColour);
+    $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
+    playSound(randomChosenColour);
+  }
+
+  function playSound(name){
+    var audio = new Audio("sounds/" + name + ".mp3");
+    audio.play();
+}
+  
+  function animatePress(currentColor) {
+    $("#" + currentColor).addClass("pressed");
+    setTimeout(function () {
+    $("#" + currentColor).removeClass("pressed");
+  }, 100);
+}
+   
+  
+  function startOver() {
+  level = 0;
+  gamePattern = [];
+  started = false;
+}
+
+
+</script>
+</body>
+</html>

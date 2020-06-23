@@ -1,0 +1,223 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+  background: url("69846.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+ 
+}
+
+#title{
+  font-family: cursive;
+  font-size: 5rem;
+  margin:  2%;
+  color: white;
+  padding-left: 360px;
+  margin-left: 145px;
+  -webkit-text-stroke: 1px white;
+   
+  text-shadow:
+       7px 7px 0 BLACK,
+     -3px -3px 0 black,  
+      3px -3px 0 black,
+      -3px 3px 0 BLACK,
+       3px 3px 0 black;
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+
+}
+
+.button{
+	margin: 10px 50px 75px 140px;
+	width: 100%; 
+	
+}
+
+.btn {
+   width: 290px;
+   height: 70px;
+   margin-top: 90px;
+   color: white;
+   margin-left: -80px;
+   background-color:rgb(25, 26, 26);
+   border: 3px solid white;
+   border-top-left-radius: 25px;
+   border-bottom-right-radius: 25px;
+   font-family: cursive;
+   font-size: 2rem;
+}
+
+
+.footer {
+  color: #f67280;
+  font-family: cursive;
+
+  font-size: 30px;
+  margin-left: 70px;
+  margin-top: 230px;
+
+  
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #d7d7d8da;
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 25px;
+  border: 1px solid #888;
+  border-top-left-radius: 25px;
+   border-bottom-right-radius: 25px;
+   border-BOTTOM-left-radius: 25px;
+   border-TOP-right-radius: 25px;
+  width: 80%; /* Could be more or less, depending on screen size */
+  font-family: cursive;
+  font-size: 2rem;
+}
+
+/* The Close Button */
+.close {
+  color: rgb(29, 29, 29);
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Media Queries: Tablet Landscape  */
+@media screen and (max-width: 1250px) {
+    .button { width:67%; }
+    /*#secondary { width:30%; margin-left:3%;} */
+}
+
+/* Media Queries: Tabled Portrait #secondary { width:100%; margin:0; border:none; } */
+@media screen and (max-width: 1250px) {
+    .button { width:100%;
+    display: grid; }
+    
+}
+
+@media only screen and (max-width: 1250px) {
+  body {
+    background-image: url(69846.jpg);
+  }
+
+  #title {
+  
+    font-family: cursive;
+  font-size: 4REM;
+  margin-top: 30px;
+  color: white;
+  padding-left: 360px;
+  margin-left: 145px;
+  -webkit-text-stroke: 1px white;
+  }
+ 
+  .btn{
+    width:159px;
+    height: 50px;
+   margin-top: 95px;
+   margin-left: -10px;
+   font-size: 1rem;
+  }  
+
+  .footer{
+  font-size: 20px;
+  margin-left: 135px;
+  margin-top: 100px;
+
+  }
+}
+
+@media  (max-width: 1250px) { 
+
+  #title {
+  font-size: 60px;
+  margin-left: -10px;  
+  }
+  
+  .btn {
+   width: 350px;
+   height: 70px;
+   margin-top: 40px;
+   margin-left: -70px;
+   font-size: 2.5rem;
+
+ } 
+
+  .footer{
+  font-size: 20px;
+  margin-left: 135px;
+  margin-top: 100px;
+
+  }
+
+}
+
+
+/*@media (max-width: 414px) { 
+  
+  #title {
+    font-size:8rem;
+    padding-left: 100px;} } 
+/*@media only screen and (min-width: 375px) {
+body{
+  display: block;
+  width: 100% ;
+
+  
+  
+  }
+.container {
+  width: 100%;
+  margin: auto;
+}
+#title{
+  font-size: 10vw;
+  margin-top: 70px;
+  padding-left: 98px;
+
+}
+
+.button{
+  margin: 10px 50px 75px 80px;
+  width: 100%; 
+  
+}
+
+.btn {
+   width: 250px;
+   height: 60px;
+   margin-top: 50px;
+   margin-left: 20px;
+   color: white;
+ }
+
+}
+

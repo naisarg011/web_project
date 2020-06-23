@@ -1,0 +1,190 @@
+body {
+  text-align: center;
+  background: url("70075.jpg");
+  background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.home{
+  position: absolute;
+  text-decoration: none;
+  margin-left: 94%;
+  margin-top: 20px;
+  color: whitesmoke;
+  background-color: rgb(25, 26, 26);
+  border: 3px solid white;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 25px;
+  
+  }
+
+
+#level-title {
+   width: 350px;
+   height: 60px;
+   margin-top: 20px;
+   color: white;
+   background-color: rgb(25, 26, 26);
+   border: 3px solid white;
+   border-top-left-radius: 25px;
+   border-bottom-right-radius: 25px;
+   font-family: cursive;
+   font-size: 2rem;
+  
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 180px;
+  width: 180px;
+  border: 7px solid silver;
+  border-radius: 30%;
+  margin-left: 5px;
+}
+
+.game-over {
+  background: url("70075.jpg");
+  opacity: 0.5;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.red {
+  background-color: rgba(240, 71, 71, 0.801);
+}
+
+.green {
+  background-color: rgba(85, 248, 85, 0.801);
+}
+
+.blue {
+  background-color: rgba(40, 40, 202, 0.801);
+}
+
+.yellow {
+  background-color: rgba(250, 250, 27, 0.801);
+}
+
+
+.orange{
+  background-color: rgba(235, 172, 57, 0.801);
+}
+
+.pink{
+  background-color:  rgba(250, 71, 196, 0.801);
+}
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+@media only screen and (max-width: 1250px) {
+  body {
+    background-image: url(70075.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+
+  }
+  .home{
+    position: absolute;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 94%;
+    background-color: rgb(25, 26, 26);
+     border: 1px solid white;
+     border-top-left-radius: 25px;
+     border-bottom-right-radius: 25px;
+    color: whitesmoke;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 20px;
+    
+    }
+  
+  #level-title {
+     width: 250px;
+     height: 45px;
+     margin-top: 50px;
+     color: white;
+     background-color: rgb(25, 26, 26);
+     border: 3px solid white;
+     border-top-left-radius: 25px;
+     border-bottom-right-radius: 25px;
+     font-family: cursive;
+     font-size: 1.3rem;
+    
+  }
+  
+  .container {
+    display: block;
+    width: 50%;
+    margin: auto;
+  
+  }
+  
+  .btn {
+    margin-top: 50px;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border: 5px solid silver;
+    border-radius: 30%;
+  }
+  
+  .game-over {
+    background: url("70075.jpg");
+  opacity: 0.5;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  }
+  .red {
+    background-color: rgba(240, 71, 71, 0.801);
+  }
+  
+  .green {
+    background-color: rgba(85, 248, 85, 0.801);
+  }
+  
+  .blue {
+    background-color: rgba(40, 40, 202, 0.801);
+  }
+  
+  .yellow {
+    background-color: rgba(250, 250, 27, 0.801);
+  }
+  
+  
+  .orange{
+    background-color: rgba(235, 172, 57, 0.801);
+  }
+  
+  .pink{
+    background-color: rgba(250, 71, 196, 0.801);
+  }
+  .pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+  }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>Kioku Game</title>
+   <link rel="stylesheet" type="text/css" href="index.css">
+   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+        rel="stylesheet">
+</head>
+<body>
+
+<h1 id="title">Kioku Game</h1>
+<div class="container">
+
+	<div class="button">
+		<a href="easy.html"><button class="btn first">2018</button></a> &emsp; &emsp; &emsp; &emsp; &emsp;
+		<a href="medium.html"><button class="btn second">2019</button></a><br>
+		<a href="insane.html"><button class="btn third ">2020</button></a>&emsp; &emsp; &emsp; &emsp; &emsp;
+		<button id="myBtn" class="btn fourth">ABOUT GAME</button>
+		<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p><b>ABOUT GAME</b><br>The game name Kioku means memory in japanese. This game is made by SENERES which stands for Shreyanshi, Naisarg, Riddhi and Shivam: the creator of this game.<br><b>HOW TO PLAY?</b><br>In this game you have follow to the pattern of lights and sounds and repeat the same combination to move on to the next round.<br>It starts off easy but it won’t be long before you’re questioning your memory and struggling to remember the pattern. Rack up high scores, improve your memory and enjoy this game.<br><b>LEVELS OF GAME</b><br>2018: Easy level<br>2019: Medium level<br>2020: Hard level</p>
+  </div>
+
+</div>
+	</div>
+</div>
+
+
+<div class="footer">MADE WITH ❤️ BY SENERES</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+
+
+</script>
+</body>
+</html>
